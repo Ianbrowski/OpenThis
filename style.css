@@ -1,0 +1,136 @@
+body{
+  margin: 0;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-image: url('bg.jpg');
+   background-size: cover; 
+  background-position: center;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: #87858557;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 50%, 50%);
+}
+.head{
+  font-weight: bolder;
+  color: #b0112d;
+  word-spacing: -4px;
+  font-family: Brush Script MT, cursive;
+  font-size: 20px;
+  text-shadow:5px 5px 10px rgb(255 255 255 / 55%);
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+hr{
+  width: 75%;
+  background-color: black;
+  border:1px solid black;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #ebdda9;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
+  left: 10px;
+  top: 10px;
+}
+.nigga{
+  margin-top:10px;
+  text-align: center;
+}
+.nigga2{
+  margin-top:px;
+  text-align: center;
+
+}
+span{
+margin-left: 90px;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: #FFF3C7;
+  color: black;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 50%);
+  margin-left: 15px;
+  margin-right: 15px;
+  bottom: 10px;
+  
+}
+p,h3{
+  text-align: justify;
+  margin-left: 15px;
+  font-size: 12px;
+  margin-right: 15px;
+  
+}
+p{
+  margin-top: -10px;
+
+}
+button{
+  margin-top: 50px;
+  padding:10px;
+  background-color: pink;
+  border-radius: 10px;
+  border: 0px none;
+  transition: 4s;
+}
+a{
+  text-decoration: none;
+  color:black;
+  transition: 2s;
+  
+
+
+}
+a:hover{
+ padding: 30px;
+font-size: 20px;
+font-weight: bolder;
+opacity: 1.5;
+}
+footer{
+  padding:12px;
+}
+@media (max-width: 768px) {
+
+body{
+  mar
+}
+}
